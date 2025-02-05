@@ -1,12 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace BookLibrary
+namespace BookstoreLibrary
 {
-    internal class Customer
+    /// <summary>
+    /// Represents a customer in the bookstore system.
+    /// </summary>
+    public class Customer
     {
+        /// <summary>
+        /// Gets or sets the customer's name.
+        /// </summary>
+        public string Name { get; set; }
+
+        /// <summary>
+        /// Gets or sets the customer's email.
+        /// </summary>
+        public string Email { get; set; }
+
+        /// <summary>
+        /// Initializes a new instance of the Customer class.
+        /// </summary>
+        public Customer(string name, string email)
+        {
+            Name = name;
+            Email = email;
+        }
     }
 }
